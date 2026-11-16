@@ -1,0 +1,402 @@
+gldiversity: 200 inputs and outputs, from real runs (io/ios.pl has the same as Prolog facts).
+
+1. variety([music,music,logic,time,logic])
+   => variety(3,4)
+2. diversify([time,mind,time], [proof,reason,algorithm,sentence])
+   => [time,mind,proof]
+3. variety([logic,logic,mind,mind,mind,idea,logic])
+   => variety(3,5)
+4. diversify([time,music], [proof,reason,algorithm,sentence])
+   => [time,music]
+5. variety([logic,idea,logic,mind,idea,time,music,music])
+   => variety(5,7)
+6. diversify([idea,mind,mind,logic,mind,idea,music], [proof,reason,algorithm,sentence])
+   => [idea,mind,proof,logic,reason,algorithm,music]
+7. variety([logic,mind,mind,logic])
+   => variety(2,3)
+8. diversify([logic,logic,idea,logic,music,time,mind,music], [proof,reason,algorithm])
+   => [logic,proof,idea,reason,music,time,mind,algorithm]
+9. variety([logic])
+   => variety(1,0)
+10. diversify([mind,mind,idea], [proof,reason,algorithm])
+   => [mind,proof,idea]
+11. variety([mind,music,music,music,logic,mind])
+   => variety(3,4)
+12. diversify([logic,logic,idea,music,mind], [proof])
+   => [logic,proof,idea,music,mind]
+13. variety([music,idea,music,mind,time])
+   => variety(4,4)
+14. diversify([mind,music,mind,idea,logic,mind,mind,idea], [proof,reason,algorithm])
+   => [mind,music,proof,idea,logic,reason,algorithm,idea]
+15. variety([logic,logic,idea,mind,mind])
+   => variety(3,4)
+16. diversify([mind,mind,logic,music,idea,mind,mind,mind,logic,idea], [proof])
+   => [mind,proof,logic,music,idea,mind,mind,mind,logic,idea]
+17. variety([time,logic,mind,idea,time,time,music,logic,music])
+   => variety(5,8)
+18. diversify([idea,idea,logic,logic,time], [proof,reason,algorithm,sentence])
+   => [idea,proof,logic,reason,time]
+19. variety([music,logic,idea])
+   => variety(3,2)
+20. diversify([logic,logic,mind], [proof,reason,algorithm,sentence])
+   => [logic,proof,mind]
+21. variety([logic,mind])
+   => variety(2,1)
+22. diversify([mind,logic,logic], [proof,reason,algorithm,sentence])
+   => [mind,logic,proof]
+23. variety([time,mind])
+   => variety(2,1)
+24. diversify([time,mind,music,logic,music], [])
+   => [time,mind,music,logic,music]
+25. variety([mind,music,logic,mind,idea])
+   => variety(4,4)
+26. diversify([music,mind,mind,mind,music,logic,time,logic,idea], [])
+   => [music,mind,mind,mind,music,logic,time,logic,idea]
+27. variety([mind,music,mind,mind,logic,idea])
+   => variety(4,5)
+28. diversify([music,idea,music,logic,music], [proof,reason,algorithm])
+   => [music,idea,proof,logic,reason]
+29. variety([idea,idea,idea,music,music,mind,logic,logic,music])
+   => variety(4,7)
+30. diversify([logic,logic,logic,idea,time,logic,music,music], [proof])
+   => [logic,proof,logic,idea,time,logic,music,music]
+31. variety([music,logic])
+   => variety(2,1)
+32. diversify([music,time,idea,mind,time,logic,logic,mind,time,time], [proof,reason,algorithm])
+   => [music,time,idea,mind,proof,logic,reason,algorithm,time,time]
+33. variety([logic,music,idea,logic,logic,logic,logic])
+   => variety(3,4)
+34. diversify([logic,mind,logic,logic], [])
+   => [logic,mind,logic,logic]
+35. variety([music,idea,logic,music,time,time])
+   => variety(4,5)
+36. diversify([music,logic,mind,mind,time,logic,logic,mind], [proof,reason,algorithm,sentence])
+   => [music,logic,mind,proof,time,reason,algorithm,sentence]
+37. variety([time,logic,logic,logic,mind,music,mind,mind])
+   => variety(4,6)
+38. diversify([idea,time,logic,logic,music,logic,logic,time,mind,logic], [proof,reason,algorithm,sentence])
+   => [idea,time,logic,proof,music,reason,algorithm,sentence,mind,logic]
+39. variety([logic,time,music,music,music,mind,logic,mind,mind])
+   => variety(4,7)
+40. diversify([time,mind,mind], [proof,reason,algorithm])
+   => [time,mind,proof]
+41. variety([logic,time,mind,time,time,music,music,idea])
+   => variety(5,7)
+42. diversify([logic,mind,logic], [proof])
+   => [logic,mind,proof]
+43. variety([time])
+   => variety(1,0)
+44. diversify([logic,idea,logic,logic,time,time,logic,idea,idea,logic], [proof])
+   => [logic,idea,proof,logic,time,time,logic,idea,idea,logic]
+45. variety([logic,music,idea,logic,time,logic,logic,mind,mind])
+   => variety(5,8)
+46. diversify([time,music,time,logic,mind,mind], [proof,reason,algorithm,sentence])
+   => [time,music,proof,logic,mind,reason]
+47. variety([idea,idea,idea,logic,idea,logic,mind,time,mind])
+   => variety(4,6)
+48. diversify([time], [proof])
+   => [time]
+49. variety([logic,time,logic,idea,time])
+   => variety(3,4)
+50. diversify([logic,logic], [proof,reason,algorithm,sentence])
+   => [logic,proof]
+51. variety([logic,logic,mind,mind,idea,idea,logic,music])
+   => variety(4,7)
+52. diversify([logic,logic,time,logic,logic,logic], [])
+   => [logic,logic,time,logic,logic,logic]
+53. variety([idea,idea,time,mind,mind,logic])
+   => variety(4,5)
+54. diversify([music,mind], [proof,reason])
+   => [music,mind]
+55. variety([mind,logic,mind,idea])
+   => variety(3,3)
+56. diversify([idea], [proof,reason])
+   => [idea]
+57. variety([logic,mind,logic])
+   => variety(2,2)
+58. diversify([idea,time], [proof,reason,algorithm])
+   => [idea,time]
+59. variety([logic,logic,logic,logic,logic,logic,idea])
+   => variety(2,2)
+60. diversify([mind,idea,mind,logic,logic,logic,mind,mind,logic,logic], [])
+   => [mind,idea,mind,logic,logic,logic,mind,mind,logic,logic]
+61. variety([logic])
+   => variety(1,0)
+62. diversify([idea,logic,mind,music,mind,idea,logic,logic], [proof,reason,algorithm])
+   => [idea,logic,mind,music,proof,reason,algorithm,logic]
+63. variety([mind])
+   => variety(1,0)
+64. diversify([mind,logic,logic,logic], [])
+   => [mind,logic,logic,logic]
+65. variety([music,mind,music,idea,idea,music,time,time,time,mind])
+   => variety(4,8)
+66. diversify([music,logic,mind,music,mind], [proof,reason,algorithm])
+   => [music,logic,mind,proof,reason]
+67. variety([mind,mind,time,mind])
+   => variety(2,3)
+68. diversify([logic,mind,logic,music,idea,logic,time], [proof,reason])
+   => [logic,mind,proof,music,idea,reason,time]
+69. variety([time,mind,logic,logic,idea,music])
+   => variety(5,5)
+70. diversify([logic,mind], [])
+   => [logic,mind]
+71. variety([logic,time,mind,logic,mind,music,logic,logic])
+   => variety(4,7)
+72. diversify([mind,mind,time,idea], [proof,reason,algorithm,sentence])
+   => [mind,proof,time,idea]
+73. variety([music,logic,mind])
+   => variety(3,2)
+74. diversify([idea,music,idea], [proof,reason,algorithm,sentence])
+   => [idea,music,proof]
+75. variety([idea,idea,logic,mind,mind,music,logic,logic,time])
+   => variety(5,8)
+76. diversify([mind,logic,logic,logic,idea,mind,mind], [proof,reason,algorithm])
+   => [mind,logic,proof,reason,idea,algorithm,mind]
+77. variety([logic,idea,logic,time,logic,music,logic,time])
+   => variety(4,6)
+78. diversify([logic,music,idea,mind], [proof,reason])
+   => [logic,music,idea,mind]
+79. variety([idea,time,idea,logic,logic,mind,idea,logic,mind])
+   => variety(4,6)
+80. diversify([mind,time,music,mind], [proof])
+   => [mind,time,music,proof]
+81. variety([mind,mind,logic,time,mind,logic])
+   => variety(3,4)
+82. diversify([logic,mind,music,idea,time,logic,music,mind,logic], [])
+   => [logic,mind,music,idea,time,logic,music,mind,logic]
+83. variety([music,logic,logic,logic])
+   => variety(2,2)
+84. diversify([logic,logic,time], [proof,reason,algorithm])
+   => [logic,proof,time]
+85. variety([logic,idea,logic,music,music,time,time,time,time])
+   => variety(4,6)
+86. diversify([logic,idea], [proof,reason,algorithm])
+   => [logic,idea]
+87. variety([music,logic,music,logic,logic,time,logic,mind,idea,mind])
+   => variety(5,8)
+88. diversify([mind,mind,idea,mind,time,logic,logic,logic], [proof,reason])
+   => [mind,proof,idea,reason,time,logic,logic,logic]
+89. variety([logic,idea,logic,idea,logic,logic,mind,logic,mind])
+   => variety(3,5)
+90. diversify([mind,logic,time], [proof,reason,algorithm])
+   => [mind,logic,time]
+91. variety([mind,time,mind,logic,music])
+   => variety(4,4)
+92. diversify([logic], [])
+   => [logic]
+93. variety([time,music,music,logic,logic])
+   => variety(3,4)
+94. diversify([idea,mind,time,logic,logic,mind,music,mind,mind], [proof,reason,algorithm,sentence])
+   => [idea,mind,time,logic,proof,reason,music,algorithm,sentence]
+95. variety([mind,music,time,time,logic])
+   => variety(4,4)
+96. diversify([time,mind,logic,logic,time,idea], [proof,reason])
+   => [time,mind,logic,proof,reason,idea]
+97. variety([music,idea,time,time,music,time,time])
+   => variety(3,5)
+98. diversify([mind,mind,logic,time,mind,idea], [proof,reason,algorithm,sentence])
+   => [mind,proof,logic,time,reason,idea]
+99. variety([mind,time,idea,music,idea,logic,mind,mind,idea,mind])
+   => variety(5,9)
+100. diversify([time,mind,music,idea], [proof])
+   => [time,mind,music,idea]
+101. variety([mind,time,idea,mind,mind,mind,mind,time])
+   => variety(3,4)
+102. diversify([mind,logic,time,logic,idea,time,mind,mind,mind,mind], [])
+   => [mind,logic,time,logic,idea,time,mind,mind,mind,mind]
+103. variety([logic,mind,mind,music,mind,logic,logic])
+   => variety(3,6)
+104. diversify([music,mind], [proof,reason,algorithm,sentence])
+   => [music,mind]
+105. variety([mind,mind,mind,logic,music])
+   => variety(3,3)
+106. diversify([logic,idea,idea,idea,time], [proof,reason,algorithm,sentence])
+   => [logic,idea,proof,reason,time]
+107. variety([music,music,time,logic])
+   => variety(3,3)
+108. diversify([time,music,logic,time,logic,idea,idea], [])
+   => [time,music,logic,time,logic,idea,idea]
+109. variety([mind,mind,music,logic,mind,music,mind,logic,mind,time])
+   => variety(4,7)
+110. diversify([music,logic], [proof,reason])
+   => [music,logic]
+111. variety([logic,mind,music,logic,music])
+   => variety(3,4)
+112. diversify([mind,idea,idea,mind,time], [proof,reason])
+   => [mind,idea,proof,reason,time]
+113. variety([idea,mind,logic,music,idea,idea,logic,time,idea,logic])
+   => variety(5,8)
+114. diversify([mind,logic,music,logic,music,idea,time], [proof,reason,algorithm,sentence])
+   => [mind,logic,music,proof,reason,idea,time]
+115. variety([mind,logic,logic])
+   => variety(2,2)
+116. diversify([time,mind], [proof])
+   => [time,mind]
+117. variety([time,mind,mind,mind,mind,logic])
+   => variety(3,3)
+118. diversify([time,mind,logic,logic,idea,logic,idea], [proof,reason,algorithm,sentence])
+   => [time,mind,logic,proof,idea,reason,algorithm]
+119. variety([mind])
+   => variety(1,0)
+120. diversify([mind,logic,logic,logic,mind,music], [proof])
+   => [mind,logic,proof,logic,mind,music]
+121. variety([time,music,music,time,mind,time,mind,logic,mind])
+   => variety(4,7)
+122. diversify([mind,logic,logic,mind,logic,mind,logic,mind], [proof,reason,algorithm,sentence])
+   => [mind,logic,proof,reason,algorithm,sentence,logic,mind]
+123. variety([logic,logic])
+   => variety(1,1)
+124. diversify([mind], [proof,reason,algorithm])
+   => [mind]
+125. variety([time,mind,music,logic,music,mind])
+   => variety(4,5)
+126. diversify([mind,logic,logic,logic,mind], [proof,reason])
+   => [mind,logic,proof,reason,mind]
+127. variety([logic,idea,music,mind,logic,time])
+   => variety(5,5)
+128. diversify([logic,music,logic,logic,logic,time,mind,logic,logic,mind], [])
+   => [logic,music,logic,logic,logic,time,mind,logic,logic,mind]
+129. variety([music,logic,idea,idea,logic,mind,time,mind,time,idea])
+   => variety(5,8)
+130. diversify([mind,logic,mind,logic,time,logic], [proof,reason,algorithm])
+   => [mind,logic,proof,reason,time,algorithm]
+131. variety([mind,mind,logic,logic,time,idea,logic,logic])
+   => variety(4,6)
+132. diversify([mind,logic,idea,logic,time,mind,time,mind,logic,logic], [])
+   => [mind,logic,idea,logic,time,mind,time,mind,logic,logic]
+133. variety([mind,logic,logic,idea,logic,music,mind])
+   => variety(4,6)
+134. diversify([logic,logic], [proof])
+   => [logic,proof]
+135. variety([logic,music,mind,logic,mind,mind,logic,idea])
+   => variety(4,6)
+136. diversify([idea,music,music,mind,mind,logic], [])
+   => [idea,music,music,mind,mind,logic]
+137. variety([music,idea,idea,music,time,idea,idea,music])
+   => variety(3,5)
+138. diversify([time,logic,logic,mind,time,time,logic,mind], [])
+   => [time,logic,logic,mind,time,time,logic,mind]
+139. variety([mind,idea,mind,logic,idea,mind,mind,mind])
+   => variety(3,5)
+140. diversify([mind,time,logic,mind,logic,logic,time], [])
+   => [mind,time,logic,mind,logic,logic,time]
+141. variety([logic,music,mind,logic,logic,time,idea,logic,time,mind])
+   => variety(5,8)
+142. diversify([logic,music,logic,music,music,mind,time,time,time,time], [proof,reason,algorithm])
+   => [logic,music,proof,reason,algorithm,mind,time,time,time,time]
+143. variety([music,mind,logic,mind,mind,mind])
+   => variety(3,4)
+144. diversify([logic,logic,logic,time,mind,idea], [proof])
+   => [logic,proof,logic,time,mind,idea]
+145. variety([music,music,logic,mind,logic])
+   => variety(3,4)
+146. diversify([time,mind,mind], [proof])
+   => [time,mind,proof]
+147. variety([logic,mind,mind,time])
+   => variety(3,3)
+148. diversify([music,mind,music,logic], [proof,reason])
+   => [music,mind,proof,logic]
+149. variety([logic])
+   => variety(1,0)
+150. diversify([time,mind,time,mind], [proof,reason,algorithm])
+   => [time,mind,proof,reason]
+151. variety([time,mind,mind,time,mind,mind,mind,music,mind,mind])
+   => variety(3,5)
+152. diversify([logic,mind,mind,mind,logic,logic,music,music,mind,music], [proof,reason,algorithm,sentence])
+   => [logic,mind,proof,reason,algorithm,sentence,music,music,mind,music]
+153. variety([music,mind])
+   => variety(2,1)
+154. diversify([time,logic,time,mind,logic,time,music,time,mind,logic], [proof,reason,algorithm,sentence])
+   => [time,logic,proof,mind,reason,algorithm,music,sentence,mind,logic]
+155. variety([mind,logic,logic,logic])
+   => variety(2,2)
+156. diversify([idea,mind,music], [])
+   => [idea,mind,music]
+157. variety([logic,mind,logic])
+   => variety(2,2)
+158. diversify([logic,logic,mind,time], [proof,reason])
+   => [logic,proof,mind,time]
+159. variety([mind,mind,idea])
+   => variety(2,2)
+160. diversify([music,mind,time,mind,mind,mind,logic,mind], [])
+   => [music,mind,time,mind,mind,mind,logic,mind]
+161. variety([logic])
+   => variety(1,0)
+162. diversify([logic,mind], [proof])
+   => [logic,mind]
+163. variety([idea,idea,logic,idea,time,idea,idea,logic,time,mind])
+   => variety(4,7)
+164. diversify([time,mind,idea,logic,music,idea], [])
+   => [time,mind,idea,logic,music,idea]
+165. variety([music,logic,mind,time,music,mind,logic,idea,logic])
+   => variety(5,8)
+166. diversify([music,music,idea,music,logic,mind,mind,time,music], [])
+   => [music,music,idea,music,logic,mind,mind,time,music]
+167. variety([logic,mind,time])
+   => variety(3,2)
+168. diversify([mind,mind,mind,mind], [proof,reason])
+   => [mind,proof,reason,mind]
+169. variety([idea,time,music,idea,idea,idea])
+   => variety(3,4)
+170. diversify([mind], [])
+   => [mind]
+171. variety([music,mind,time])
+   => variety(3,2)
+172. diversify([idea], [])
+   => [idea]
+173. variety([mind,time,mind,logic,mind,mind,logic,logic,mind])
+   => variety(3,6)
+174. diversify([mind,logic,time,time,time,mind,logic], [proof])
+   => [mind,logic,time,proof,time,mind,logic]
+175. variety([music,logic,mind,logic,mind])
+   => variety(3,3)
+176. diversify([time,mind,time,mind,time,logic,idea,mind,logic], [])
+   => [time,mind,time,mind,time,logic,idea,mind,logic]
+177. variety([time,music,music,mind,mind])
+   => variety(3,4)
+178. diversify([logic,idea], [proof,reason])
+   => [logic,idea]
+179. variety([mind,idea,mind,mind,time,logic,idea,logic])
+   => variety(4,7)
+180. diversify([logic,idea,music,music,time,music,idea], [proof,reason,algorithm])
+   => [logic,idea,music,proof,time,reason,algorithm]
+181. variety([mind,mind,mind,logic])
+   => variety(2,2)
+182. diversify([time,mind,mind,mind,time,mind], [proof])
+   => [time,mind,proof,mind,time,mind]
+183. variety([time,logic])
+   => variety(2,1)
+184. diversify([logic,logic], [proof,reason,algorithm,sentence])
+   => [logic,proof]
+185. variety([mind,time])
+   => variety(2,1)
+186. diversify([idea,music,mind,music,mind,idea], [proof])
+   => [idea,music,mind,proof,mind,idea]
+187. variety([logic,logic,logic])
+   => variety(1,1)
+188. diversify([time,mind,idea,time,logic,time,mind,mind], [proof,reason])
+   => [time,mind,idea,proof,logic,reason,mind,mind]
+189. variety([logic,mind,mind,logic])
+   => variety(2,3)
+190. diversify([logic,logic,mind,logic,music,logic,idea], [proof])
+   => [logic,proof,mind,logic,music,logic,idea]
+191. variety([mind])
+   => variety(1,0)
+192. diversify([mind,idea,mind,mind], [])
+   => [mind,idea,mind,mind]
+193. variety([time,mind,logic,logic,time,music,logic,music,music,mind])
+   => variety(4,9)
+194. diversify([logic,idea,logic,time,time,time,music], [proof,reason,algorithm])
+   => [logic,idea,proof,time,reason,algorithm,music]
+195. variety([logic])
+   => variety(1,0)
+196. diversify([mind], [])
+   => [mind]
+197. variety([music,mind,idea,mind,mind,music,mind,logic,time])
+   => variety(5,7)
+198. diversify([logic,logic], [proof,reason])
+   => [logic,proof]
+199. variety([logic,logic,mind,logic,idea,time,logic,logic,music,mind])
+   => variety(5,8)
+200. diversify([time,logic,mind,music,mind,idea,logic,mind], [proof])
+   => [time,logic,mind,music,proof,idea,logic,mind]
